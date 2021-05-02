@@ -42,71 +42,21 @@ export default function Home({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
-      <Grid>
-        {products.slice(0, 3).map((product, i) => (
+      <Grid layout="normal">
+        {products.map((product, i) => (
           <ProductCard
+            //
+            variant="simple"
             key={product.id}
             product={product}
-            imgProps={{
-              width: i === 0 ? 1080 : 540,
-              height: i === 0 ? 1080 : 540,
-            }}
           />
         ))}
       </Grid>
-      <Marquee variant="secondary">
-        {products.slice(0, 3).map((product, i) => (
-          <ProductCard
-            key={product.id}
-            product={product}
-            variant="slim"
-            imgProps={{
-              width: 320,
-              height: 320,
-            }}
-          />
-        ))}
-      </Marquee>
+
       <Hero
-        headline="Release Details: The Yeezy BOOST 350 V2 ‘Natural'"
-        description="
-        The Yeezy BOOST 350 V2 lineup continues to grow. We recently had the
-        ‘Carbon’ iteration, and now release details have been locked in for
-        this ‘Natural’ joint. Revealed by Yeezy Mafia earlier this year, the
-        shoe was originally called ‘Abez’, which translated to ‘Tin’ in
-        Hebrew. It’s now undergone a name change, and will be referred to as
-        ‘Natural’."
+        headline="huesec"
+        description="Ultra rare clothing designed on the Gold Coast, Australia."
       />
-      <Grid layout="B">
-        {products.slice(0, 3).map((product, i) => (
-          <ProductCard
-            key={product.id}
-            product={product}
-            imgProps={{
-              width: i === 0 ? 1080 : 540,
-              height: i === 0 ? 1080 : 540,
-            }}
-          />
-        ))}
-      </Grid>
-      <Marquee>
-        {products.slice(0, 3).map((product, i) => (
-          <ProductCard
-            key={product.id}
-            product={product}
-            variant="slim"
-            imgProps={{
-              width: 320,
-              height: 320,
-            }}
-          />
-        ))}
-      </Marquee>
-      {/* <HomeAllProductsGrid
-        newestProducts={products}
-        categories={categories}
-        brands={brands}
-      /> */}
     </>
   )
 }

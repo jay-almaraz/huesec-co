@@ -22,25 +22,29 @@
     &:nth-child(6n + 1) .productTitle > span,
     &:nth-child(6n + 1) .productPrice,
     &:nth-child(6n + 1) .wishlistButton {
-      @apply bg-violet text-white;
+      @apply bg-secondary text-secondary;
+      /* @apply bg-violet text-white; */
     }
 
     &:nth-child(6n + 5) .productTitle > span,
     &:nth-child(6n + 5) .productPrice,
     &:nth-child(6n + 5) .wishlistButton {
-      @apply bg-blue text-white;
+      /* @apply bg-blue text-white; */
+      @apply bg-secondary text-secondary;
     }
 
     &:nth-child(6n + 3) .productTitle > span,
     &:nth-child(6n + 3) .productPrice,
     &:nth-child(6n + 3) .wishlistButton {
-      @apply bg-pink text-white;
+      /* @apply bg-pink text-white; */
+      @apply bg-secondary text-secondary;
     }
 
     &:nth-child(6n + 6) .productTitle > span,
     &:nth-child(6n + 6) .productPrice,
     &:nth-child(6n + 6) .wishlistButton {
-      @apply bg-cyan text-white;
+      /* @apply bg-cyan text-white; */
+      @apply bg-secondary text-secondary;
     }
   }
 
@@ -81,6 +85,8 @@
 
 .simple {
   & .squareBg {
+    /* background: none; */
+    /* background-color: red; */
     @apply bg-accents-0 !important;
     background-image: url('/bg-products.svg');
   }
