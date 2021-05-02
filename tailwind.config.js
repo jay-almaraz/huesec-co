@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: 'media', // https://tailwindcss.com/docs/dark-mode#toggling-dark-mode-manually
   future: {
     purgeLayersByDefault: true,
     applyComplexClasses: true,
