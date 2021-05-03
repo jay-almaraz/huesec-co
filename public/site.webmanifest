@@ -1,7 +1,7 @@
 {
-  "name": "Next.js Commerce",
-  "short_name": "Next.js Commerce",
-  "description": "Next.js Commerce -> https://www.nextjs.org/commerce",
+  "name": "huesec",
+  "short_name": "huesec",
+  "description": "huesec - Ultra rare clothing designed on the Gold Coast -> https://huesec.co",
   "display": "standalone",
   "start_url": "/",
   "theme_color": "#fff",
